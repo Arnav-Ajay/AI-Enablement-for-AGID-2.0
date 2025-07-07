@@ -27,8 +27,8 @@ AI-Enablement-for-AGID-2.0
    ```
 
 3. **Before you begin, you need 2 things:
-   a. OpenAI API KEY: create a .env file `backend/.env` to store your api key. (You can get it from OpenAI website -> https://platform.openai.com/docs/overview
-   b. The datafile to be placed at `src/data/`. (sent seperately)
+   - OpenAI API KEY: create a .env file `backend/.env` to store your api key. (You can get it from OpenAI website -> https://platform.openai.com/docs/overview
+   - The datafile to be placed at `src/data/`. (sent seperately)
    
 4. **Open the `src/index.html` file in your web browser** to view the project.
 
