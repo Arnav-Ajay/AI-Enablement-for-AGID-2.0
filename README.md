@@ -26,14 +26,13 @@ AI-Enablement-for-AGID-2.0
    cd AI-Enablement-for-AGID-2.0
    ```
 
-3. **Open the `src/index.html` file in your web browser** to view the project.
+3. **Before you begin, you need 2 things:
+   a. OpenAI API KEY: create a .env file `backend/.env` to store your api key. (You can get it from OpenAI website -> https://platform.openai.com/docs/overview
+   b. The datafile to be placed at `src/data/`. (sent seperately)
+   
+4. **Open the `src/index.html` file in your web browser** to view the project.
 
 ## Dependencies
 - Bootstrap (latest version)
 - Custom CSS and JavaScript files
-
-## Contributing
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+- For Python dependencies, see requirements.txt
