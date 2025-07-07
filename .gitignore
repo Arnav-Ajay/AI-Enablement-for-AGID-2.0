@@ -1,0 +1,12 @@
+# Ignore environment variable files
+# contains OpenAI API Key
+.env
+backend/.env 
+
+# Ignore Python virtual environments
+# refer to requirements.txt for more details
+aibasic/
+
+# Ignore TIII Data File - 600+MB
+# link to the data file is provided seperately
+src/data/title_iii_cleaned.csv
