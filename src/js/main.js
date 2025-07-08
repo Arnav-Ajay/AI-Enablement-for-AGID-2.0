@@ -14,13 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
                     body: JSON.stringify({ query })
                 });
                 const data = await response.json();
-                if (data.error) {
+                if (!response.ok || data.error) {
                     document.getElementById('query-result').innerHTML =
-                        `<div class="alert alert-danger">${data.error}</div>`;
+                        `<div class="alert alert-danger">${data.error || 'An unknown error occurred.'}</div>`;
                 } else {
                     document.getElementById('query-result').innerHTML =
                         `<div class="alert alert-success"><strong>Summary:</strong> ${data.summary}</div>
-                         <div class="mt-3"><strong>Table:</strong><br>${data.table_html}</div>`;
+                        <div class="mt-3">
+                        <div class="table-container">
+                        <div class="mt-3">
+                        <div class="table-wrapper">
+                            ${data.table_html}
+                        </div>
+                        </div>
+
+                        </div>
+                        </div>`;
                 }
             } catch (err) {
                 document.getElementById('query-result').innerHTML =

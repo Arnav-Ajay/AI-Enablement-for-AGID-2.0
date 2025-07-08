@@ -31,3 +31,62 @@ h1, h2, h3 {
     background-color: #343a40;
     color: white;
 }
+.table-responsive {
+    max-height: 500px;
+    width: 100%;
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.table {
+    min-width: 900px; /* Ensures horizontal scroll if many columns */
+    width: max-content;
+    font-size: 0.97rem;
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th, .table td {
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+}
+
+.table thead th {
+    position: sticky;
+    top: 0;
+    background: #f8f9fa;
+    z-index: 2;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f6fa;
+}
+
+.table-container {
+    max-height: 500px;     /* Adjust as needed */
+    overflow: auto;
+    border: 1px solid #dee2e6;
+    margin-top: 1rem;
+}
+
+.table-responsive-scroll {
+    overflow-x: auto;
+    min-width: 100%;
+}
+
+.table-wrapper {
+    max-height: 400px;       /* Enables vertical scroll if needed */
+    overflow-x: auto;        /* Enables horizontal scroll */
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    margin-top: 1rem;
+    display: block;
+}
